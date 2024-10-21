@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Flexslider.
+   ========================================================================== */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none; list-style-type: none; } 
+
+.flex-direction-nav li {width: 100px; position: absolute; right: 0px; display:none;}
+
+.flex-prev{ display: block; width: 30px; float: left; height: 35px; display: none; background: url('/assets/images/left-arrow.png') no-repeat; text-indent: -99999px; }
+.flex-next{ display: block;  width: 30px; height: 35px; float: right; background: url('/assets/images/right-arrow.png') no-repeat; text-indent: -99999px;}
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;}
+.flexslider .slides img {width: 100%; display: block; height: auto}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+.no-js .slides > li:first-child {display: block;}
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {zoom: 1;}
+.flex-viewport {-webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.flexslider .slides {zoom: 1;}
+.flex-control-nav li {float: left;	margin-right: 9px;}
+.flex-control-nav li a {cursor: pointer; display: block; text-indent: -99999px;	background: #4c4747; border-radius: 50%; width: 11px;	height: 11px; line-height: 11px; opacity: .2; -moz-transition: all .2s linear; -webkit-transition: all .2s linear; transition: all .2s linear;}
+.flex-control-nav li .flex-active {background: #01bda1;	opacity: 1;}

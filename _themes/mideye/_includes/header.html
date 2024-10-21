@@ -1,0 +1,36 @@
+<header class="fullwidth" id="header">
+    <div class="container">
+        <a href="{{ site.url }}" class="logo ir">Mideye</a>
+        <div id="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> <!-- /#toggle -->
+
+        <nav class="main-menu">
+            <ul id="menu-huvudmeny" class="menu">
+                <li class="menu-item{% if page.url == '/' %} current-menu-item{% endif %}">
+                    <a href="{{ site.url }}/">Home</a>
+                </li>
+                <li class="menu-item{% if page.url contains 'authentication-service' %} current-menu-item{% endif %}">
+                    <a href="{{ site.url }}/authentication-service/">Authentication Service</a>
+                </li>
+                <li class="menu-item{% if page.url contains 'partners' %} current-menu-item{% endif %}">
+                    <a href="{{ site.url }}/partners/">Partners</a>
+                </li>
+                <li class="menu-item{% if page.url contains 'support' and page.url != '/support/administrators/faq/' %} current-menu-item{% endif %}">
+                    <a href="{{ site.url }}/support/">Support</a>
+                </li>
+                <li class="menu-item{% if page.url contains 'faq' %} current-menu-item{% endif %}">
+                    <a href="{{ site.url }}/support/administrators/faq/">Alerts & FAQ</a>
+                </li>
+                <li class="menu-item{% if page.url contains 'about-us' %} current-menu-item{% endif %}">
+                    <a href="{{ site.url }}/about-us/">About Us</a>
+                </li>
+                <li class="menu-item{% if page.url contains 'contact' %} current-menu-item{% endif %}">
+                    <a href="{{ site.url }}/contact/">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

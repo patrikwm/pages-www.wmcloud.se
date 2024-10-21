@@ -1,0 +1,21 @@
+# Site settings
+title: Mideye Website
+email: contact@mideye.com
+description: >- 
+  Mideye website description.
+baseurl: "" 
+url: "http://www.mideye.com"
+
+# Include directories for custom theme
+includes_dir: _themes/mideye/_includes
+layouts_dir: _themes/mideye/_layouts
+sass:
+  sass_dir: _themes/mideye/assets
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+collections:
+  alerts:
+    output: true
