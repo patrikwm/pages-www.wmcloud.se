@@ -4,7 +4,7 @@ email: contact@mideye.com
 description: >- 
   Mideye website description.
 baseurl: "" 
-url: "http://www.mideye.com"
+url: "http://www.wmcloud.se"
 
 # Include directories for custom theme
 includes_dir: _themes/mideye/_includes
